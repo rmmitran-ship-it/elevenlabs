@@ -411,17 +411,40 @@
 
         <div class="security-visual">
           <div class="sec-slide active" data-slide="1">
-            <svg viewBox="0 0 200 200" fill="none" stroke="#D4D0C8" stroke-width="1">
-              <circle cx="100" cy="100" r="70"/>
-              <circle cx="100" cy="100" r="45"/>
-              <circle cx="100" cy="100" r="20"/>
-              <line x1="30" y1="100" x2="170" y2="100"/>
-              <line x1="100" y1="30" x2="100" y2="170"/>
-              <circle cx="140" cy="70" r="3" fill="#D4D0C8"/>
-              <circle cx="75" cy="120" r="3" fill="#D4D0C8"/>
-              <circle cx="120" cy="135" r="3" fill="#D4D0C8"/>
-            </svg>
-            <div class="sec-caption">Data residency &amp; zero retention</div>
+            <div class="sec-compliance-grid">
+              <div class="sec-compliance-cell">
+                <svg viewBox="0 0 80 80" fill="none" stroke="#C8C4BD" stroke-width="1">
+                  <circle cx="40" cy="40" r="26"/>
+                  <ellipse cx="40" cy="40" rx="10" ry="26"/>
+                  <line x1="14" y1="40" x2="66" y2="40"/>
+                  <path d="M40 14 Q22 40 40 66 Q58 40 40 14"/>
+                </svg>
+                <span>Data Residency options</span>
+              </div>
+              <div class="sec-compliance-cell">
+                <svg viewBox="0 0 80 80" fill="none" stroke="#C8C4BD" stroke-width="1">
+                  <path d="M40 10 L62 20 V42 Q62 58 40 70 Q18 58 18 42 V20 Z"/>
+                  <line x1="40" y1="28" x2="40" y2="50"/>
+                  <line x1="30" y1="39" x2="50" y2="39"/>
+                  <circle cx="40" cy="39" r="3"/>
+                </svg>
+                <span>HIPAA attestation</span>
+              </div>
+              <div class="sec-compliance-cell">
+                <svg viewBox="0 0 80 80" fill="none" stroke="#C8C4BD" stroke-width="1">
+                  <path d="M20 30 L40 20 L60 30 L60 52 L40 62 L20 52 Z"/>
+                  <path d="M20 30 L40 40 L60 30"/>
+                  <line x1="40" y1="40" x2="40" y2="62"/>
+                </svg>
+                <span>Zero Retention mode</span>
+              </div>
+              <div class="sec-compliance-cell">
+                <svg viewBox="0 0 80 80" fill="none" stroke="#C8C4BD" stroke-width="1">
+                  <path d="M40 12 L52 18 L58 30 L58 44 L52 56 L40 62 L28 56 L22 44 L22 30 L28 18 Z"/>
+                </svg>
+                <span>SOC 2 Type II, ISO 27001</span>
+              </div>
+            </div>
           </div>
           <div class="sec-slide" data-slide="2">
             <svg viewBox="0 0 200 200" fill="none" stroke="#D4D0C8" stroke-width="1">
