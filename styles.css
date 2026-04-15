@@ -1136,3 +1136,66 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
   h2 { font-size: 24px; line-height: 30px; }
   .logo-placeholder { flex: 0 0 calc(50% - 12px); }
 }
+
+/* ===== SECURITY DYNAMIC (tabbed) ===== */
+.security .security-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: start; }
+.security-items { display: flex; flex-direction: column; }
+.sec-item {
+  padding: 22px 0;
+  border-top: 1px solid var(--el-border);
+  cursor: pointer;
+  transition: opacity .25s ease;
+  opacity: .55;
+}
+.sec-item:last-child { border-bottom: 1px solid var(--el-border); }
+.sec-item.active { opacity: 1; }
+.sec-item:hover { opacity: .85; }
+.sec-item.active:hover { opacity: 1; }
+.sec-item h4 {
+  display: flex; align-items: center; gap: 10px;
+  font-size: 17px; font-weight: 500; color: var(--el-gray-900);
+  margin: 0;
+}
+.sec-icon { font-size: 15px; }
+.sec-body {
+  max-height: 0; overflow: hidden;
+  opacity: 0;
+  transition: max-height .4s ease, opacity .3s ease, margin .3s ease;
+}
+.sec-item.active .sec-body {
+  max-height: 260px;
+  opacity: 1;
+  margin-top: 12px;
+}
+.sec-body p {
+  font-size: 14px; line-height: 22px;
+  color: var(--el-gray-500);
+  max-width: 480px;
+}
+.security-visual {
+  position: relative;
+  background: var(--el-beige);
+  border-radius: 20px;
+  min-height: 420px;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+}
+.sec-slide {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity .5s ease;
+  pointer-events: none;
+  padding: 40px;
+}
+.sec-slide.active { opacity: 1; pointer-events: auto; }
+.sec-slide svg { width: 240px; height: 240px; }
+.sec-caption { font-size: 13px; color: #737373; }
+
+@media (max-width: 768px) {
+  .security .security-inner { grid-template-columns: 1fr !important; gap: 32px; }
+  .security-visual { min-height: 280px; }
+  .sec-slide svg { width: 180px; height: 180px; }
+}

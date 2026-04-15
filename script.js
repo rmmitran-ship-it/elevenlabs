@@ -124,3 +124,20 @@ if (countUpElements.length > 0) {
   }, { threshold: 0.3 });
   io.observe(document.querySelector('.platform-visual'));
 })();
+
+// ===== SECURITY SECTION DYNAMIC =====
+(() => {
+  const items = document.querySelectorAll('.sec-item');
+  const slides = document.querySelectorAll('.sec-slide');
+  if (!items.length || !slides.length) return;
+
+  function activate(i) {
+    items.forEach((el, j) => el.classList.toggle('active', j === i));
+    slides.forEach((el, j) => el.classList.toggle('active', j === i));
+  }
+
+  items.forEach((el, i) => {
+    el.addEventListener('click', () => activate(i));
+    el.addEventListener('mouseenter', () => activate(i));
+  });
+})();
