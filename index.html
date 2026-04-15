@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElevenLabs · AI Agents for Insurance</title>
+  <meta name="description" content="AI agents that handle claims intake, policy servicing, and new business calls with the accuracy and care that builds lasting trust.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @font-face { font-family: Waldenburg; src: url("https://eleven-public-cdn.elevenlabs.io/marketing_website/_next/static/chunks/src/app/_ui/fonts/waldenburg/KMR-Waldenburg-Buch-latin.1f7863d3c4317f3d.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; }
+    @font-face { font-family: Waldenburg; src: url("https://eleven-public-cdn.elevenlabs.io/marketing_website/_next/static/chunks/src/app/_ui/fonts/waldenburg/KMR-Waldenburg-Normal-latin.47fcefe5bf77b4e5.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+    @font-face { font-family: Waldenburg; src: url("https://eleven-public-cdn.elevenlabs.io/marketing_website/_next/static/chunks/src/app/_ui/fonts/waldenburg/KMR-Waldenburg-Fett-latin.e6b0db8ee0a63897.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ===== 1. HEADER ===== -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-left">
+        <a href="#" class="logo">
+          <span class="logo-dot"></span>
+          ElevenAgents
+        </a>
+      </div>
+      <div class="header-right">
+        <nav class="nav-links">
+          <a href="#">Platform</a>
+          <a href="#">Solutions</a>
+          <a href="#">Docs</a>
+          <a href="#">Customers</a>
+          <a href="#">Pricing</a>
+        </nav>
+        <a href="#" class="btn btn-primary btn-nav">Sign up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== 2. HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1>AI agents for insurance</h1>
+          <p>Put your customers in touch with agents that handle claims intake, policy servicing, and new business calls with the accuracy and care that builds lasting trust.</p>
+          <div class="hero-ctas">
+            <a href="#get-started" class="btn btn-primary">Create an agent</a>
+            <a href="#get-started" class="btn btn-outline">Start demo</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-widget">
+            <div class="widget-toggle">
+              <span class="toggle-option">Chat</span>
+              <span class="toggle-option active">Voice</span>
+            </div>
+            <div class="sphere"></div>
+            <div class="widget-actions">
+              <div class="widget-action">
+                <div class="widget-action-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <span>Call Agent</span>
+              </div>
+              <div class="widget-action">
+                <div class="widget-action-icon outline">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <span>Get a call</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOGO BAR ===== -->
+  <div class="logo-bar">
+    <div class="container">
+      <div class="logo-bar-inner">
+        <div class="logo-placeholder"><img src="assets/logo-tuio.png" alt="Tuio"></div>
+        <div class="logo-placeholder">Logo</div>
+        <div class="logo-placeholder">Logo</div>
+        <div class="logo-placeholder">Logo</div>
+        <div class="logo-placeholder">Logo</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 3. VALUE PROPS ===== -->
+  <section class="value-props" id="value-props">
+    <div class="container">
+      <span class="section-label">Introducing ElevenAgents for insurance</span>
+      <div class="split-header">
+        <h2>Better policyholder outcomes, lower claims leakage.</h2>
+        <p>Voice and chat agents span the full insurance journey — helping your team deliver better CX at lower cost, without compromising on compliance.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="three-col-dividers">
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/></svg>
+          </div>
+          <h3>Instant quote and coverage intake</h3>
+          <p>Collect driver or property details, preferred limits, and prior carrier info on the call, then pass a structured summary to your agency so a human can finalize pricing faster.</p>
+        </div>
+
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/><polyline points="16 6 12 2 8 6"/><line x1="12" y1="2" x2="12" y2="15"/></svg>
+          </div>
+          <h3>Automate claims first notice of loss (FNOL)</h3>
+          <p>Guide policyholders through incident details, photos or document links, injuries, and next steps, then route the report to the right adjuster or carrier queue without phone tag.</p>
+        </div>
+
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+          </div>
+          <h3>Policy servicing without wait times</h3>
+          <p>Answer common requests like proof of insurance, billing due dates, payment links, and policy change requests, while escalating complex or regulated questions to a licensed agent with full context.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. CONVERSATIONAL AGENTS (TABBED) ===== -->
+  <section class="agents" id="agents">
+    <div class="container">
+      <div class="split-header">
+        <h2>Conversational agents for every insurance setting.</h2>
+        <p>Deploy agents tailored to your carrier, customer base, and regulatory environment — no matter how specific the workflow.</p>
+      </div>
+
+      <div class="agents-inner">
+        <div class="agents-tabs">
+          <div class="agent-tab active" data-tab="1">
+            <h4>Personal and commercial lines</h4>
+            <div class="agent-tab-body">
+              <p>Handle FNOL intake, policy servicing, claims status, and renewal outreach — integrated with your claims management and CRM systems.</p>
+            </div>
+          </div>
+
+          <div class="agent-tab" data-tab="2">
+            <h4>Life and health</h4>
+            <div class="agent-tab-body">
+              <p>Handle benefit enquiries, claims declarations, enrollment support, and coverage Q&amp;A — scaling across individual and group policies without adding headcount.</p>
+            </div>
+          </div>
+
+          <div class="agent-tab" data-tab="3">
+            <h4>Specialty and commercial</h4>
+            <div class="agent-tab-body">
+              <p>Handle complex coverage enquiries, broker support, and underwriting data collection across E&amp;S lines, specialty risks, and large commercial portfolios.</p>
+            </div>
+          </div>
+
+          <div class="agent-tab" data-tab="4">
+            <h4>Intermediaries and brokers</h4>
+            <div class="agent-tab-body">
+              <p>Handle new business intake, quote qualification, client servicing, and carrier placement queries — integrated with your broker management systems.</p>
+            </div>
+          </div>
+
+          <div class="agent-tab" data-tab="5">
+            <h4>Warranty and affinity</h4>
+            <div class="agent-tab-body">
+              <p>Handle claims intake, eligibility checks, and renewal outreach for extended warranty, GAP insurance, and device protection products — at high volume and low cost per interaction.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="agents-visual">
+          <div class="chat-mockup">
+            <div class="chat-header">
+              <div class="chat-avatar"></div>
+              <span class="chat-name">Maya</span>
+            </div>
+
+            <div class="chat-panel active" data-panel="1">
+              <div class="chat-bubble user">I need to file a claim for my car accident from this morning.</div>
+              <div class="chat-bubble agent">I'm sorry to hear that. Let me open your claim right away.</div>
+              <div class="chat-status">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Claim opened</span>
+              </div>
+              <div class="chat-bubble agent">Your claim number is INS-2024-4471. Can you tell me where the accident happened?</div>
+              <div class="chat-bubble user">On the A40 near Hillingdon, around 8am.</div>
+              <div class="chat-bubble agent">Got it. I've scheduled your adjuster inspection for Thursday between 9am and 12pm.</div>
+            </div>
+
+            <div class="chat-panel" data-panel="2">
+              <div class="chat-bubble user">I need to make a claim on my critical illness policy.</div>
+              <div class="chat-bubble agent">I can help you with that. Can you confirm your policy reference number?</div>
+              <div class="chat-bubble user">It's LH-998821.</div>
+              <div class="chat-status">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Policy verified</span>
+              </div>
+              <div class="chat-bubble agent">Thank you. I can see your policy is active. I'll start the claims declaration now and send the next steps to your registered email.</div>
+            </div>
+
+            <div class="chat-panel" data-panel="3">
+              <div class="chat-bubble user">I need to check the liability limits on our commercial property policy.</div>
+              <div class="chat-bubble agent">Of course. Can you give me your company name and policy number?</div>
+              <div class="chat-bubble user">Hartwell Group, policy CP-00445.</div>
+              <div class="chat-status">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Account found</span>
+              </div>
+              <div class="chat-bubble agent">Your current public liability limit is £5 million. Would you like me to connect you with your account manager to discuss an increase?</div>
+            </div>
+
+            <div class="chat-panel" data-panel="4">
+              <div class="chat-bubble user">I'm looking to get a quote for a new fleet policy, around 40 vehicles.</div>
+              <div class="chat-bubble agent">Happy to help. I'll take a few details to get this to the right underwriter. What's the primary use of the fleet?</div>
+              <div class="chat-bubble user">Mixed use — some HGVs, mostly light commercial.</div>
+              <div class="chat-status">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Submission started</span>
+              </div>
+              <div class="chat-bubble agent">Got it. I've created a submission and your underwriter will follow up within 2 hours with indicative terms.</div>
+            </div>
+
+            <div class="chat-panel" data-panel="5">
+              <div class="chat-bubble user">I need to make a claim on my appliance warranty. My washing machine has stopped working.</div>
+              <div class="chat-bubble agent">I can help with that. Can you confirm the model and when you purchased it?</div>
+              <div class="chat-bubble user">It's a Bosch Serie 6, bought in March 2023.</div>
+              <div class="chat-status">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                <span>Warranty confirmed</span>
+              </div>
+              <div class="chat-bubble agent">Your warranty is valid. I've booked a repair visit for Saturday morning between 8am and 1pm.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. STATS COUNTER ===== -->
+  <div class="stats-strip" id="stats">
+    <div class="container">
+      <div class="stats-number"><span class="count-up" data-target="254786">0</span></div>
+      <p class="stats-label">Hours of conversations<br>every month</p>
+    </div>
+  </div>
+
+  <!-- ===== 6. PLATFORM SECTION ===== -->
+  <section class="platform" id="platform">
+    <div class="container">
+      <div class="split-header">
+        <h2>One platform for every insurance workflow</h2>
+        <p>Connect to your operating systems and deploy across all voice and digital channels — all from one platform.</p>
+      </div>
+
+      <div class="platform-visual">
+        <div class="platform-frame">
+          <div class="platform-slide active" data-slide="1">
+            <img src="assets/platform-knowledge.webp" alt="Knowledge base UI" loading="lazy">
+          </div>
+          <div class="platform-slide" data-slide="2">
+            <img src="assets/platform-integrations.webp" alt="Integrations UI" loading="lazy">
+          </div>
+          <div class="platform-slide" data-slide="3">
+            <img src="assets/platform-workflows.webp" alt="Workflows UI" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div class="platform-cards four-col-grid">
+        <button type="button" class="col-item platform-card active" data-card="1">
+          <h3>One brain across channels</h3>
+          <p>Design once, deploy everywhere including chat, phone, email and WhatsApp.</p>
+          <div class="card-progress"><span></span></div>
+        </button>
+        <button type="button" class="col-item platform-card" data-card="2">
+          <h3>Tightly integrated</h3>
+          <p>Connect your CCaaS, policy admin systems, and more for record sync and human handoffs.</p>
+          <div class="card-progress"><span></span></div>
+        </button>
+        <button type="button" class="col-item platform-card" data-card="3">
+          <h3>Workflows and guardrails</h3>
+          <p>Protect high-risk data by scoping agent access and defining agent rules.</p>
+          <div class="card-progress"><span></span></div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. WORKFLOW CARDS — CLUSTER 1 ===== -->
+  <section class="workflows" id="workflows">
+    <div class="container">
+      <div class="split-header">
+        <h2>Built for the workflows that matter most.</h2>
+        <p>Reduce handle time, improve resolution rates, and convert more leads with ElevenAgents.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="three-col-dividers">
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Claims intake and triage</h3>
+          <p>Structured FNOL across voice and digital channels. Captures incident details, third-party information, and prior damage history then routes to the right adjuster queue automatically.</p>
+        </div>
+
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h3>Policy review and servicing</h3>
+          <p>Handles billing inquiries, coverage Q&amp;A, and payment arrangements without agent involvement. Escalates to licensed agents with full context when judgement is required.</p>
+        </div>
+
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <h3>Underwriting assistance</h3>
+          <p>Collects and validates risk data from policyholders at intake. Routes to underwriters with complete, structured information and significantly reduced quote preparation time.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 8. EMOTIONALLY AWARE — CLUSTER 2 ===== -->
+  <section class="voice-capabilities" id="voice-capabilities">
+    <div class="container">
+      <div class="split-header">
+        <h2>Emotionally aware voice agents for insurance.</h2>
+        <p>ElevenAgents detects tone, pace, and customer emotion — guiding every conversation toward better outcomes, even when the stakes are highest.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="three-col-dividers">
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+          </div>
+          <h3>Empathetic claims handling</h3>
+          <p>Agents adapt tone and pacing in real time. They slow down after distress signals and acknowledge before gathering information so every claimant feels heard.</p>
+        </div>
+
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          </div>
+          <h3>Controlled underwriting</h3>
+          <p>Moves through required fields naturally, following the policyholder's narrative. Structured data collection that never feels like an interrogation.</p>
+        </div>
+
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Multi-language support</h3>
+          <p>Switches to the policyholder's preferred language mid-call without losing context, compliance guardrails, or structured output quality.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 9. ENTERPRISE SECURITY ===== -->
+  <section class="security" id="security">
+    <div class="container">
+      <div class="split-header">
+        <h2>Enterprise-grade security and infrastructure at scale.</h2>
+        <p>Built for the regulatory demands of EMEA insurance. Your policyholder data stays protected with infrastructure designed for financial services compliance.</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="three-col-dividers">
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>EMEA data residency</h3>
+          <p>All interaction data processed and stored within EU infrastructure. Full GDPR compliance including data deletion rights and protections for automated processing. Your data is never used to train shared models.</p>
+        </div>
+
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>SOC 2 &amp; HIPAA compliant</h3>
+          <p>SOC 2 Type II certified. HIPAA-ready for health insurance lines. Every interaction produces a timestamped, auditable transcript ready for FCA, BaFin, or ACPR review at any time.</p>
+        </div>
+
+        <div class="col-item">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9s-9-4.03-9-9 4.03-9 9-9 9 4.03 9 9z"/></svg>
+          </div>
+          <h3>EMEA regulatory coverage</h3>
+          <p>Designed for FCA Consumer Duty, EU AI Act requirements, DORA operational resilience standards, and GDPR. Compliance documentation provided to support your own regulatory obligations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 10. GET STARTED CTAs ===== -->
+  <section class="get-started" id="get-started">
+    <div class="container">
+      <h2>Get started with insurance agents today.</h2>
+
+      <div class="cta-split">
+        <div class="cta-col">
+          <h3>Start building</h3>
+          <p>Create a configured insurance agent in minutes. Pre-built templates for FNOL, policy servicing, and new business with connectors for the claims platforms you already run.</p>
+          <a href="#" class="btn btn-primary">Create an agent</a>
+          <div class="cta-visual">
+            <div class="chat-mockup small">
+              <div class="chat-header">
+                <div class="chat-avatar"></div>
+                <span class="chat-name">FNOL Agent</span>
+              </div>
+              <div class="chat-bubble agent">Hi, I can help you log a claim.</div>
+              <div class="chat-bubble agent">Can you confirm the date of the incident?</div>
+              <div class="chat-bubble user">Last Thursday around 6pm.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-col">
+          <h3>Talk to sales</h3>
+          <p>Working with a large carrier or multi-market insurer? Our team will map the right use cases to your existing stack and compliance requirements.</p>
+          <a href="#" class="btn btn-outline">Contact sales</a>
+          <div class="cta-visual">
+            <div class="code-mockup">
+              <code>
+<span class="code-kw">import</span> { ElevenLabsClient } <span class="code-kw">from</span> <span class="code-str">"@elevenlabs/elevenlabs-js"</span>;<br><br>
+<span class="code-kw">async function</span> <span class="code-fn">main</span>() {<br>
+&nbsp;&nbsp;<span class="code-kw">const</span> client = <span class="code-kw">new</span> ElevenLabsClient({<br>
+&nbsp;&nbsp;&nbsp;&nbsp;environment: <span class="code-str">"Production"</span>,<br>
+&nbsp;&nbsp;});<br>
+&nbsp;&nbsp;<span class="code-kw">await</span> client.conversationalAi<br>
+&nbsp;&nbsp;&nbsp;&nbsp;.agents.get(<span class="code-str">"fnol_agent"</span>);<br>
+}
+              </code>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 11. FAQ ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2>Frequently asked questions</h2>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Can ElevenLabs agents handle licensed insurance interactions?</h4>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Agents handle the pre-licensed workflow including structured intake, triage, and factual servicing. Anything requiring licensed advice or policy authority routes to your licensed team with full context and a complete transcript.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>Can ElevenLabs agents integrate with our claims management system?</h4>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Yes. Pre-built connectors for Duck Creek, Guidewire, Majesco, Applied Epic, and Vertafore plus REST API and webhook integration for custom systems.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>How can agents support fraud reduction?</h4>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Consistent structured intake is the foundation of effective fraud detection. Agents capture the same required fields on every FNOL call and every transcript is timestamped and searchable, enabling SIU teams to cross-reference narratives against policy history.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <h4>What happens when an agent reaches the limit of what it can handle?</h4>
+            <span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Escalation logic is fully configurable. When a call exceeds scope it transfers to a human agent with the full transcript and call summary already complete. No cold transfers and no repeated information.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 12. SHOWCASE ===== -->
+  <section class="showcase" id="showcase">
+    <div class="container">
+      <h2 class="showcase-heading">See what insurers are building.</h2>
+      <div class="showcase-grid">
+        <div class="showcase-card">
+          <div class="showcase-thumb">
+            <div class="sphere small"></div>
+          </div>
+          <h4>After-hours FNOL — 24/7 claims intake</h4>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-thumb">
+            <div class="sphere small"></div>
+          </div>
+          <h4>Policy servicing at scale</h4>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-thumb">
+            <div class="sphere small"></div>
+          </div>
+          <h4>Structured FNOL intake for SIU triage</h4>
+        </div>
+        <div class="showcase-card">
+          <div class="showcase-thumb">
+            <div class="sphere small"></div>
+          </div>
+          <h4>Quote intake automation</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 13. PRE-FOOTER CTA ===== -->
+  <div class="prefooter-cta">
+    <div class="container">
+      <div class="prefooter-inner">
+        <h2>The most realistic voice AI platform</h2>
+        <div class="prefooter-buttons">
+          <a href="#" class="btn btn-outline">Talk to sales</a>
+          <a href="#" class="btn btn-primary">Create an AI agent</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== 14. FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo">IIElevenLabs</span>
+          <div class="footer-lang">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            <span>English</span>
+          </div>
+        </div>
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h4>ElevenCreative</h4>
+            <a href="#">Text to Speech</a>
+            <a href="#">Speech to Text</a>
+            <a href="#">Voice Changer</a>
+            <a href="#">Voice Cloning</a>
+            <a href="#">Sound Effects</a>
+          </div>
+          <div class="footer-col">
+            <h4>ElevenAgents</h4>
+            <a href="#">Voice Agents</a>
+            <a href="#">Conversational AI</a>
+            <a href="#">Integrations</a>
+            <a href="#">Insurance</a>
+            <a href="#">Healthcare</a>
+            <a href="#">Financial Services</a>
+          </div>
+          <div class="footer-col">
+            <h4>ElevenAPI</h4>
+            <a href="#">API Reference</a>
+            <a href="#">Agents API</a>
+            <a href="#">Dubbing API</a>
+            <a href="#">Text to Speech API</a>
+            <a href="#">API Key</a>
+          </div>
+          <div class="footer-col">
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copyright">&copy; 2026 ElevenLabs, Inc.</span>
+        <div class="footer-legal">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Security</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
