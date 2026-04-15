@@ -122,6 +122,9 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
   margin: 0 calc(50% - 50vw) 48px;
   width: 100vw;
 }
+.divider-bottom {
+  margin: 48px calc(50% - 50vw) 0;
+}
 
 /* ===== THREE-COLUMN WITH VERTICAL DIVIDERS ===== */
 .three-col-dividers {
