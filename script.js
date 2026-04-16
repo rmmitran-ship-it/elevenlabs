@@ -141,3 +141,19 @@ if (countUpElements.length > 0) {
     el.addEventListener('mouseenter', () => activate(i));
   });
 })();
+
+// ===== HERO VIDEO AUDIO TOGGLE =====
+(() => {
+  const video = document.querySelector('.sphere-video');
+  const toggle = document.querySelector('.sphere-audio-toggle');
+  if (!video || !toggle) return;
+
+  toggle.addEventListener('click', () => {
+    const muted = !video.muted;
+    video.muted = muted;
+    toggle.setAttribute('aria-pressed', String(!muted));
+    toggle.setAttribute('aria-label', muted ? 'Unmute' : 'Mute');
+    // Some browsers pause the video on unmute — make sure it keeps playing
+    if (video.paused) video.play().catch(() => {});
+  });
+})();
