@@ -565,7 +565,7 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
 .logo-bar {
   background: var(--el-eggshell);
 }
-.logo-bar > .container { padding-top: 80px; padding-bottom: 80px; }
+.logo-bar > .container { padding-top: 48px; padding-bottom: 48px; }
 .logo-bar-inner {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -595,7 +595,7 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
 .value-props {
   background: var(--el-eggshell);
 }
-.value-props > .container { padding-top: 100px; padding-bottom: 100px; }
+.value-props > .container { padding-top: 64px; padding-bottom: 100px; }
 .value-props .split-header h2 {
   font-size: 36px;
   line-height: 42px;
@@ -896,7 +896,6 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
 .cta-buttons { display: flex; gap: 10px; }
 .cta-visual { margin-top: 40px; }
 .cta-callout {
-  margin-top: 64px;
   text-align: left;
   max-width: 680px;
 }
@@ -904,7 +903,7 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
   width: 100%;
   height: 1px;
   background: var(--el-gray-300);
-  margin: 0 0 32px;
+  margin: 64px 0 32px;
 }
 .cta-callout-title {
   font-family: Waldenburg, Georgia, serif;
