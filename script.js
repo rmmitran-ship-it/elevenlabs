@@ -153,7 +153,7 @@ if (countUpElements.length > 0) {
     video.muted = muted;
     toggle.setAttribute('aria-pressed', String(!muted));
     toggle.setAttribute('aria-label', muted ? 'Unmute' : 'Mute');
-    // Some browsers pause the video on unmute — make sure it keeps playing
+    toggle.textContent = muted ? 'Tap for sound' : 'Mute';
     if (video.paused) video.play().catch(() => {});
   });
 })();
