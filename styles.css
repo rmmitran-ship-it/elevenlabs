@@ -468,6 +468,8 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
   margin-top: 80px;
   display: flex;
   justify-content: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
