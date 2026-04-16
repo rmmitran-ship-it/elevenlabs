@@ -329,25 +329,9 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
   gap: 12px;
 }
 .sphere-audio-toggle {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  background: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: var(--el-radius-pill);
-  color: var(--el-gray-900);
-  font-family: var(--el-font);
-  font-size: 13px;
-  font-weight: 500;
   cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
-  line-height: 1;
-}
-.sphere-audio-toggle:hover {
-  background: var(--el-white);
-  transform: translateY(-1px);
+  box-sizing: border-box;
+  line-height: 1.6;
 }
 @media (max-width: 1024px) {
   .sphere-video { width: 300px; height: 300px; }
@@ -378,7 +362,7 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
   gap: 32px;
 }
 .widget-cta {
-  margin-top: 8px;
+  margin-top: 0;
   background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
@@ -386,7 +370,7 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
   color: var(--el-gray-900);
   font-size: 13px;
   font-weight: 500;
-  padding: 10px 20px;
+  padding: 12px 24px;
   transition: background 0.2s, transform 0.15s;
 }
 .widget-cta:hover {
