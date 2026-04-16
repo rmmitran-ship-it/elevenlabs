@@ -895,8 +895,7 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
 .cta-buttons { display: flex; gap: 10px; }
 .cta-visual { margin-top: 40px; }
 .cta-callout {
-  text-align: left;
-  max-width: 680px;
+  margin-bottom: 0;
 }
 .cta-callout-line {
   height: 1px;
@@ -909,12 +908,14 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
   font-size: 24px;
   line-height: 1.3;
   color: var(--el-gray-900);
-  margin-bottom: 12px;
+  max-width: 520px;
 }
 .cta-callout-text {
   font-size: 15px;
   line-height: 1.6;
   color: var(--el-gray-600);
+  max-width: 440px;
+  padding-top: 6px;
 }
 .code-mockup {
   background: var(--el-white);
