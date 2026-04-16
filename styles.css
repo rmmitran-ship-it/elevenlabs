@@ -902,7 +902,7 @@ h4 { font-family: var(--el-font); font-size: 16px; font-weight: 500; line-height
 .cta-callout-line {
   height: 1px;
   background: var(--el-gray-300);
-  margin: 64px -40px 32px;
+  margin: 64px -41px 32px;
 }
 .cta-callout-title {
   font-family: Waldenburg, Georgia, serif;
